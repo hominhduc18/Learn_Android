@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item android:title="Search"-->
+<!--        android:id="@+id/search"></item>-->
+<!--    <item android:title="Infor"-->
+<!--        android:id="@+id/infor"></item>-->
+<!--    <item android:title="About"-->
+<!--        android:id="@+id/about">-->
+<!--    <item android:title="login"-->
+<!--        android:id="@+id/login"-->
+<!--        android:icon="@drawable/ic_baseline_login_24"-->
+<!--        app:showAsAction="always"></item>-->
+<!--    <item android:title="uers"-->
+<!--        android:id="@+id/uers"-->
+<!--        android:icon="@drawable/ic_person24"-->
+<!--        app:showAsAction="always"></item>-->
+<!--    <item android:title="back"-->
+<!--        android:id="@+id/back"-->
+<!--        android:icon="@drawable/ic_baseline_arrow_back_24"-->
+
+<!--        app:showAsAction="always"></item>-->
+
+
+
+</menu>

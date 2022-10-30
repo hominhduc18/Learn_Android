@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".fragement.Home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topNavbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#1A9155"
+            app:layout_constraintTop_toTopOf="parent">>
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/tvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="4dp"
+                android:focusableInTouchMode="true"
+                android:inputType="textAutoComplete"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                app:iconifiedByDefault="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:queryBackground="@null"
+                app:queryHint="@string/txtSearch" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        <Spinner-->
+        <!--               android:id="@+id/spiner"-->
+        <!--               android:layout_width="wrap_content"-->
+        <!--               android:layout_height="32dp"-->
+        <!--               android:layout_margin="10dp"-->
+        <!--               android:dropDownSelector="@drawable/bg_food"-->
+        <!--               android:gravity="center"-->
+        <!--               android:popupBackground="#DCC18A2C"-->
+        <!--               android:spinnerMode="dropdown"-->
+        <!--               android:textAlignment="center"-->
+        <!--               android:tooltipText="Địa chỉ"-->
+        <!--               app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--               app:layout_constraintStart_toStartOf="parent"-->
+        <!--               app:layout_constraintTop_toTopOf="parent"-->
+        <!--               app:layout_constraintVertical_bias="0.0" />-->
+
+        <!--           <ImageView-->
+        <!--               android:layout_width="32dp"-->
+        <!--               android:layout_height="32dp"-->
+        <!--               android:layout_margin="10dp"-->
+        <!--               android:background="@drawable/plush"-->
+        <!--               app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--               app:layout_constraintEnd_toEndOf="parent"-->
+        <!--               app:layout_constraintTop_toTopOf="parent"-->
+        <!--               app:layout_constraintVertical_bias="0.0" >-->
+        <!--               -->
+        <!--           </ImageView>-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="301dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/plush" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="#43FBC02D">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:text="Đề xuất"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/tv_view_more_promo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:text="Xem thêm..."
+                            android:textColor="#FFA000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <GridView
+                        android:id="@+id/homePromo"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:numColumns="4">
+
+                    </GridView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#43FBC02D">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/product"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/tv_view_more_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:text="Xem thêm..."
+                            android:textColor="#FFA000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <GridView
+                        android:id="@+id/homeProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="10"
+                        android:numColumns="4" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

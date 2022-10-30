@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ed1fc"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/labelNameDia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Thêm mới AlBUM"
+        android:textColor="#fff"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã Album :"
+        android:textColor="#fff"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/labelNameDia"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etCodeAlbum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintStart_toEndOf="@id/label1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/label1">
+
+    </EditText>
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Album :"
+        android:textColor="#fff"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/label1"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etNameAlbum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintStart_toEndOf="@id/label1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/label2">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#ccc"
+        android:text="Delete "
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNameAlbum">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Album "
+        android:textColor="#000"
+        android:backgroundTint="#ccc"
+        app:layout_constraintTop_toBottomOf="@+id/etNameAlbum"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

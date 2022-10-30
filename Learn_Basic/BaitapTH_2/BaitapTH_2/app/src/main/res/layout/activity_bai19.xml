@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bai19Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hienthi"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+    <ListView
+        android:id="@+id/listviewTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

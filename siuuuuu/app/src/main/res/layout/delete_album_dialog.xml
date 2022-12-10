@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/labelNameDia"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Xóa nhân viên"
+            android:textColor="#000"
+            android:textSize="32dp"
+            android:background="#ccc"
+            android:paddingLeft="32dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bạn có chắc sẽ xóa nhân viên ?"
+            android:textSize="22dp"
+            android:textAlignment="center"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnCalcel_deleteDiaLog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="calcel"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:backgroundTint="#ccc"
+                android:layout_marginLeft="8dp"></Button>
+            <Button
+                android:id="@+id/btnDeleteAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:backgroundTint="#ccc"
+                android:layout_marginLeft="8dp"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

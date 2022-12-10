@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+
+    >
+
+    <TextView
+        android:id="@+id/labelNameDia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="THÊM SẢN PHẨM"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÊN SP :"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/labelNameDia"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etNameAlbum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@id/label2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="@id/label2">
+
+    </EditText>
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MÃ SP :"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/label2"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etCodeAlbum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#000"
+        app:layout_constraintStart_toEndOf="@id/label3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/label3">
+
+    </EditText>
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gía SP :"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintTop_toBottomOf="@id/label3"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textColor="#000"
+        app:layout_constraintStart_toEndOf="@id/label4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/label4">
+
+    </EditText>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa trắng "
+        android:textColor="#000"
+        android:backgroundTint="#ccc"
+        app:layout_constraintTop_toBottomOf="@+id/etAge"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp">
+
+    </Button>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lưu "
+        android:textColor="#000"
+        android:backgroundTint="#ccc"
+        app:layout_constraintTop_toBottomOf="@+id/etAge"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DisplayAlbumActivity">
+
+    <LinearLayout
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#ABD6C8"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DS SẢN PHẨM"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="26dp"></TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/STT"
+            android:background="#009688"
+            android:layout_marginRight="2dp"
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:height="40dp"
+            android:layout_height="wrap_content"
+            android:text="STT" />
+        <TextView
+            android:layout_marginHorizontal="2dp"
+            android:background="#009688"
+            android:textStyle="bold"
+            android:height="40dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/label"
+        tools:listitem="@layout/item_album_layout"
+        ></ListView>
+
+</LinearLayout>
